@@ -19,7 +19,7 @@ module.exports = async (env, options) => {
     entry: {
       polyfill: ["core-js/stable", "regenerator-runtime/runtime"],
       taskpane: ["./src/taskpane/js/assignsignature.js", "./src/taskpane/html/assignsignature.html"],
-      commands: "./src/commands/js/autorunshared.js",
+      commands: "./src/commands/js/autorun.js",
     },
     output: {
       clean: true,
@@ -79,8 +79,8 @@ module.exports = async (env, options) => {
         ],
       }),
       new HtmlWebpackPlugin({
-        filename: "commands/html/autorunweb.html",
-        template: "./src/commands/html/autorunweb.html",
+        filename: "commands/html/autorun.html",
+        template: "./src/commands/html/autorun.html",
         chunks: ["polyfill", "commands"],
       }),
     ],
