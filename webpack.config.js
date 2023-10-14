@@ -5,7 +5,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const urlDev = "https://localhost:3000/";
-const urlProd = "https://www.contoso.com/"; // CHANGE THIS TO YOUR PRODUCTION DEPLOYMENT LOCATION
+const urlProd = "https://www.reach.com/"; // CHANGE THIS TO YOUR PRODUCTION DEPLOYMENT LOCATION
 
 async function getHttpsOptions() {
   const httpsOptions = await devCerts.getHttpsServerOptions();
@@ -18,8 +18,8 @@ module.exports = async (env, options) => {
     devtool: "source-map",
     entry: {
       polyfill: ["core-js/stable", "regenerator-runtime/runtime"],
-      taskpane: ["./src/js/assignsignature.js", "./src/html/assignsignature.html"],
-      commands: "./src/js/autorunshared.js",
+      taskpane: ["./src/taskpane/js/assignsignature.js", "./src/taskpane/html/assignsignature.html"],
+      commands: "./src/commands/js/autorun.js",
     },
     output: {
       clean: true,
@@ -56,7 +56,7 @@ module.exports = async (env, options) => {
     plugins: [
       new HtmlWebpackPlugin({
         filename: "taskpane/html/assignsignature.html",
-        template: "./src/html/assignsignature.html",
+        template: "./src/taskpane/html/assignsignature.html",
         chunks: ["polyfill", "taskpane"],
       }),
       new CopyWebpackPlugin({
@@ -79,8 +79,8 @@ module.exports = async (env, options) => {
         ],
       }),
       new HtmlWebpackPlugin({
-        filename: "runtime/html/autorunweb.html",
-        template: "./src/html/autorunweb.html",
+        filename: "commands/html/autorun.html",
+        template: "./src/commands/html/autorun.html",
         chunks: ["polyfill", "commands"],
       }),
     ],

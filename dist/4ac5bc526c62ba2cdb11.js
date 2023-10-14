@@ -1,1 +1,0 @@
-Office.initialize=function(i){};
