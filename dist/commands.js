@@ -1,0 +1,2 @@
+Office.actions.associate("checkSignature",(function(c){Office.context.mailbox.item.saveAsync((function(c){console.log(c,"----t---"),Office.context.mailbox.getCallbackTokenAsync({isRest:!0},(function(c){}))}))}));
+//# sourceMappingURL=commands.js.map
