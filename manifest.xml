@@ -9,9 +9,9 @@
   <DefaultLocale>en-us</DefaultLocale>
   <DisplayName DefaultValue="Reach Add-in for Outlook"/>
   <Description DefaultValue="Add your email signature when composing emails in Outlook."/>
-  <IconUrl DefaultValue="https://reach-add-in.test/assets/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://reach-add-in.test/assets/icon-128.png"/>
-  <SupportUrl DefaultValue="https://reach-add-in.test"/>
+  <IconUrl DefaultValue="https://reach-ms-add-in.test/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://reach-ms-add-in.test/assets/icon-128.png"/>
+  <SupportUrl DefaultValue="https://reach-ms-add-in.test"/>
 
   <Requirements>
     <Sets DefaultMinVersion="1.1">
@@ -23,7 +23,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://reach-add-in.test/taskpane/html/assignsignature.html"/>
+        <SourceLocation DefaultValue="https://reach-ms-add-in.test/taskpane/html/assignsignature.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -93,14 +93,14 @@
       </Hosts>
       <Resources>
         <bt:Images>
-          <bt:Image id="Icon16x16" DefaultValue="https://reach-add-in.test/assets/icon-16.png"/>
-          <bt:Image id="Icon32x32" DefaultValue="https://reach-add-in.test/assets/icon-32.png"/>
-          <bt:Image id="Icon80x80" DefaultValue="https://reach-add-in.test/assets/icon-80.png"/>
+          <bt:Image id="Icon16x16" DefaultValue="https://reach-ms-add-in.test/assets/icon-16.png"/>
+          <bt:Image id="Icon32x32" DefaultValue="https://reach-ms-add-in.test/assets/icon-32.png"/>
+          <bt:Image id="Icon80x80" DefaultValue="https://reach-ms-add-in.test/assets/icon-80.png"/>
         </bt:Images>
         <bt:Urls>
-          <bt:Url id="residUrl0" DefaultValue="https://reach-add-in.test/src/taskpane/html/assignsignature.html"></bt:Url>
-          <bt:Url id="Autorun" DefaultValue="https://reach-add-in.test/src/commands/html/autorun.html"></bt:Url>
-          <bt:Url id="runtimeJs" DefaultValue="https://reach-add-in.test/src/commands/js/autorun.js"></bt:Url>
+          <bt:Url id="residUrl0" DefaultValue="https://reach-ms-add-in.test/src/taskpane/html/assignsignature.html"></bt:Url>
+          <bt:Url id="Autorun" DefaultValue="https://reach-ms-add-in.test/src/commands/html/autorun.html"></bt:Url>
+          <bt:Url id="runtimeJs" DefaultValue="https://reach-ms-add-in.test/src/commands/js/autorun.js"></bt:Url>
         </bt:Urls>
          <bt:ShortStrings>
           <bt:String id="residGL0" DefaultValue="WiseStamp"></bt:String>

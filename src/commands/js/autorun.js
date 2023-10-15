@@ -1,6 +1,6 @@
-/* global Office, console */
+/* global Office, axios, console */
 const SIGNATURE_API_URL = "api/v2/app/reach/get-signature";
-const API_BASE_URL = "https://apidev.reach.app";
+const API_BASE_URL = "https://reach-api.test";
 
 function getSignature(token) {
   // `${_host}/domain/user/view_signature/raw?token=${e}&email=${_email}&client=outlook&platform=${_platform}&client_version=${_client_version}&addin_js_version=1.3.0`
@@ -9,19 +9,25 @@ function getSignature(token) {
   return axios.get(url, {
     params: {
       email,
-      token,
     },
   });
 }
 function checkSignature(e) {
+  console.log(e);
   Office.context.mailbox.item.saveAsync(function (t) {
+    // console.log(t);
     Office.context.mailbox.getCallbackTokenAsync({ isRest: !0 }, function (t) {
       getSignature(t.value)
-        .then((t) => {
-          Office.context.mailbox.item.body.setSignatureAsync("Hi I am loaded");
+        .then((res) => {
+          Office.context.mailbox.item.body.setSignatureAsync(res.data, {
+            coercionType: Office.MailboxEnums.BodyType.Html,
+          });
         })
         .catch((error) => {
-          Office.context.mailbox.item.body.setSignatureAsync(error.response.data.message);
+          console.log(error);
+          if (error.response?.data?.message) {
+            console.error(error.response?.data?.message);
+          }
         });
     });
   });
