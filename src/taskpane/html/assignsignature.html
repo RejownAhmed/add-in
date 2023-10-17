@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"/>
 
     <!-- Others -->
-    <link href="https://fonts.googleapis.com/css?family=Mulish" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- Style file -->
     <link href="../css/assignsignature.css" rel="stylesheet" type="text/css" media="all" />
@@ -19,29 +19,7 @@
   </head>
 
   <body>
-    <div id="loader" style="display: none"></div>
-
-    <div id="box_signatures">
-      <div class="header">
-        <div class="service-not-active" style="display: none">
-          <div class="service-not-active-container">
-            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
-            <div class="service-not-active-container-title">
-              <span id="user__ws__email"></span>
-              <span>is inactive on Reach. Please contact your Reach App admin to activate your signature.</span>
-            </div>
-          </div>
-        </div>
-        <div class="sign-up" style="display: none">
-          <samp class="sign__up_user__ws__header">Let's get your account set up</samp>
-          <div class="sign__up_user__ws__text">
-            <span class="sign__up_user__ws__email"></span>
-            <span>is not registered with Reach App. Please sign up to create your signature.</span>
-          </div>
-          <button class="btn sign-up-btn">Sign up</button>
-        </div>
-
-        <div class="welcome" style="display: none">
+        <div class="welcome">
           <samp class="welcome_user__ws__header"
             >Welcome to Reach <br />
             Add-in for Outlook!</samp
@@ -52,10 +30,9 @@
               email.</span
             >
           </div>
-          <button class="btn welcome-btn">OK, got it</button>
         </div>
 
-        <div class="sig-active" style="display: none">
+        <div class="sig-active" style="display: none;">
           <div class="sig-active-title">
             <i class="fa fa-check-circle" aria-hidden="true"></i>
             <span>Service is active</span>

@@ -5,14 +5,12 @@
 
 /* global console, Office */
 
-Office.onReady((info) => {
-  if (info.host === Office.HostType.Outlook) {
-    // showLoader(), initConstants(), void 0 === _isFirstTime || _isFirstTime ? showWelcomeSection() :
-    renderMainPage();
-  }
+Office.onReady(() => {
+  renderMainPage();
 });
 
 async function renderMainPage() {
+  console.log("assignsignature page");
   Office.context.mailbox.item.saveAsync(function (e) {
     console.log(e, "assignsignature page");
   });
