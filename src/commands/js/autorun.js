@@ -41,9 +41,10 @@ function checkSignature(e) {
             // saveUserSignature(res.data);
           })
           .catch((error) => {
-            console.log(error);
             if (error.response?.data?.message) {
               console.error(error.response?.data?.message);
+            } else {
+              console.log(error);
             }
           });
       });
