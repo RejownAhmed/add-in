@@ -9,9 +9,9 @@
   <DefaultLocale>en-us</DefaultLocale>
   <DisplayName DefaultValue="Reach Add-in for Outlook"/>
   <Description DefaultValue="Add your email signature when composing emails in Outlook."/>
-  <IconUrl DefaultValue="https://reach.app/add-ins/ms/office/email-signature-inject/assets/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://reach.app/add-ins/ms/office/email-signature-inject/assets/icon-128.png"/>
-  <SupportUrl DefaultValue="https://www.reach.com/support"/>
+  <IconUrl DefaultValue="https://addins.reach.app/outlook/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://addins.reach.app/outlook/assets/icon-128.png"/>
+  <SupportUrl DefaultValue="https://addins.reach.app/outlook"/>
 
   <Requirements>
     <Sets DefaultMinVersion="1.1">
@@ -23,7 +23,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://reach.app/add-ins/ms/office/email-signature-inject/taskpane/html/assignsignature.html"/>
+        <SourceLocation DefaultValue="https://addins.reach.app/outlook/taskpane/html/assignsignature.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -68,8 +68,8 @@
                     </Supertip>
                     <Icon>
                       <bt:Image size="16" resid="Icon16x16" />
-                      <bt:Image size="32" resid="Icon16x16" />
-                      <bt:Image size="80" resid="Icon16x16" />
+                      <bt:Image size="32" resid="Icon32x32" />
+                      <bt:Image size="80" resid="Icon80x80" />
                     </Icon>
                     <Action xsi:type="ShowTaskpane">
                       <SourceLocation resid="residUrl0"/>
@@ -93,14 +93,14 @@
       </Hosts>
       <Resources>
         <bt:Images>
-          <bt:Image id="Icon.16x16" DefaultValue="https://reach.app/add-ins/ms/office/email-signature-inject/assets/icon-16.png"/>
-          <bt:Image id="Icon.32x32" DefaultValue="https://reach.app/add-ins/ms/office/email-signature-inject/assets/icon-32.png"/>
-          <bt:Image id="Icon.80x80" DefaultValue="https://reach.app/add-ins/ms/office/email-signature-inject/assets/icon-80.png"/>
+          <bt:Image id="Icon16x16" DefaultValue="https://addins.reach.app/outlook/assets/icon-16.png"/>
+          <bt:Image id="Icon32x32" DefaultValue="https://addins.reach.app/outlook/assets/icon-32.png"/>
+          <bt:Image id="Icon80x80" DefaultValue="https://addins.reach.app/outlook/assets/icon-80.png"/>
         </bt:Images>
         <bt:Urls>
-          <bt:Url id="residUrl0" DefaultValue="https://reach.app/add-ins/ms/office/email-signature-inject/src/taskpane/html/assignsignature.html"></bt:Url>
-          <bt:Url id="Autorun" DefaultValue="https://reach.app/add-ins/ms/office/email-signature-inject/src/commands/html/autorun.html"></bt:Url>
-          <bt:Url id="runtimeJs" DefaultValue="https://reach.app/add-ins/ms/office/email-signature-inject/src/commands/js/autorun.js"></bt:Url>
+          <bt:Url id="residUrl0" DefaultValue="https://addins.reach.app/outlook/src/taskpane/html/assignsignature.html"></bt:Url>
+          <bt:Url id="Autorun" DefaultValue="https://addins.reach.app/outlook/src/commands/html/autorun.html"></bt:Url>
+          <bt:Url id="runtimeJs" DefaultValue="https://addins.reach.app/outlook/src/commands/js/autorun.js"></bt:Url>
         </bt:Urls>
          <bt:ShortStrings>
           <bt:String id="residGL0" DefaultValue="WiseStamp"></bt:String>
