@@ -11,7 +11,7 @@
   <Description DefaultValue="Add your email signature when composing emails in Outlook."/>
   <IconUrl DefaultValue="https://addins.reach.app/outlook/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://addins.reach.app/outlook/assets/icon-128.png"/>
-  <SupportUrl DefaultValue="https://addins.reach.app/outlook"/>
+  <SupportUrl DefaultValue="https://reach.app/support"/>
 
   <Requirements>
     <Sets DefaultMinVersion="1.1">
@@ -23,7 +23,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://addins.reach.app/outlook/taskpane/html/assignsignature.html"/>
+        <SourceLocation DefaultValue="https://addins.reach.app/outlook/src/taskpane/html/assignsignature.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>

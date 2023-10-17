@@ -23,7 +23,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://reach-ms-add-in.test/taskpane/html/assignsignature.html"/>
+        <SourceLocation DefaultValue="https://reach-ms-add-in.test/src/taskpane/html/assignsignature.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
