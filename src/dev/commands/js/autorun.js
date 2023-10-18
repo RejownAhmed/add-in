@@ -1,4 +1,3 @@
-/* global Office, axios, console */
 import getBaseUrl from "../../../apis";
 
 const SIGNATURE_API_URL = "api/v2/app/reach/get-signature";
