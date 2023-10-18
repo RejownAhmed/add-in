@@ -1,5 +1,5 @@
 /* global Office, axios, console */
-import "../../../apis";
+import getBaseUrl from "../../../apis";
 
 const SIGNATURE_API_URL = "api/v2/app/reach/get-signature";
 const API_BASE_URL = getBaseUrl('local');
