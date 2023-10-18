@@ -1,4 +1,4 @@
-export default function getBaseUrl(env) {
+function getBaseUrl(env) {
   switch (env) {
     case 'production':
       return "https://reachapi.reach.app";
