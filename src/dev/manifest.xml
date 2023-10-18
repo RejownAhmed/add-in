@@ -4,11 +4,11 @@
   xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
   xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides" xsi:type="MailApp">
   <Id>5f33a78b-1640-46fb-8657-b6609cb89d87</Id>
-  <Version>1.0.0.0</Version>
+  <Version>1.0.0.2</Version>
   <ProviderName>Reach</ProviderName>
   <DefaultLocale>en-us</DefaultLocale>
   <DisplayName DefaultValue="Reach Add-in for Outlook"/>
-  <Description DefaultValue="Add your email signature when composing emails in Outlook."/>
+  <Description DefaultValue="This Add In adds your (or organization users') email signature when composing emails in Outlook."/>
   <IconUrl DefaultValue="https://addins.reach.app/outlook/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://addins.reach.app/outlook/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://reach.app/support"/>
@@ -107,7 +107,7 @@
           <bt:String id="residStr0" DefaultValue="Settings"></bt:String>
         </bt:ShortStrings>
         <bt:LongStrings>
-          <bt:String id="AppDescription" DefaultValue="Add your email signature when composing emails in Outlook."></bt:String>
+          <bt:String id="AppDescription" DefaultValue="This Add In adds your (or organization users') email signature when composing emails in Outlook."></bt:String>
           <bt:String id="residTT0" DefaultValue="Reach App"></bt:String>
         </bt:LongStrings>
       </Resources>
