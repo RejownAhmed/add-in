@@ -103,12 +103,12 @@
           <bt:Url id="runtimeJs" DefaultValue="https://reach-ms-add-in.test/src/local/commands/js/autorun.js"></bt:Url>
         </bt:Urls>
          <bt:ShortStrings>
-          <bt:String id="residGL0" DefaultValue="WiseStamp"></bt:String>
+          <bt:String id="residGL0" DefaultValue="Reach App"></bt:String>
           <bt:String id="residStr0" DefaultValue="Settings"></bt:String>
         </bt:ShortStrings>
         <bt:LongStrings>
           <bt:String id="residAppDesc" DefaultValue="Add your email signature when composing emails in Outlook."></bt:String>
-          <bt:String id="residTT0" DefaultValue="WiseStamp"></bt:String>
+          <bt:String id="residTT0" DefaultValue="Reach App"></bt:String>
         </bt:LongStrings>
       </Resources>
     </VersionOverrides>
