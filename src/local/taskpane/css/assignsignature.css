@@ -1,0 +1,33 @@
+html,
+body {
+  font-family: "Poppins";
+  height: 100%;
+  margin: 0 auto;
+}
+
+.welcome {
+  font-family: "Poppins";
+  font-style: normal;
+}
+
+.welcome_user__ws__header {
+  font-size: 14px;
+  line-height: 20px;
+  align-items: center;
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Mulish";
+  font-weight: 600;
+  color: #000000;
+  margin-top: 5px;
+}
+
+.welcome_user__ws__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 15px;
+}

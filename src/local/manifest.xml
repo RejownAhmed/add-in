@@ -23,7 +23,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://reach-ms-add-in.test/taskpane/html/assignsignature.html"/>
+        <SourceLocation DefaultValue="https://reach-ms-add-in.test/src/local/taskpane/html/assignsignature.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -98,9 +98,9 @@
           <bt:Image id="Icon80x80" DefaultValue="https://reach-ms-add-in.test/assets/icon-80.png"/>
         </bt:Images>
         <bt:Urls>
-          <bt:Url id="residUrl0" DefaultValue="https://reach-ms-add-in.test/src/taskpane/html/assignsignature.html"></bt:Url>
-          <bt:Url id="Autorun" DefaultValue="https://reach-ms-add-in.test/src/commands/html/autorun.html"></bt:Url>
-          <bt:Url id="runtimeJs" DefaultValue="https://reach-ms-add-in.test/src/commands/js/autorun.js"></bt:Url>
+          <bt:Url id="residUrl0" DefaultValue="https://reach-ms-add-in.test/src/local/taskpane/html/assignsignature.html"></bt:Url>
+          <bt:Url id="Autorun" DefaultValue="https://reach-ms-add-in.test/src/local/commands/html/autorun.html"></bt:Url>
+          <bt:Url id="runtimeJs" DefaultValue="https://reach-ms-add-in.test/src/local/commands/js/autorun.js"></bt:Url>
         </bt:Urls>
          <bt:ShortStrings>
           <bt:String id="residGL0" DefaultValue="WiseStamp"></bt:String>
