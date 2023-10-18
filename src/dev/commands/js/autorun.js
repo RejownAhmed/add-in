@@ -1,6 +1,8 @@
 /* global Office, axios, console */
+import "../../../apis";
+
 const SIGNATURE_API_URL = "api/v2/app/reach/get-signature";
-const API_BASE_URL = "https://dev.reach.app";
+const API_BASE_URL = getBaseUrl('development');
 
 // let isFirstTime = 0,
 //   signature;
