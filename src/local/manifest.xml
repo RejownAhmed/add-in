@@ -37,7 +37,7 @@
 
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides" xsi:type="VersionOverridesV1_0">
     <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides/1.1" xsi:type="VersionOverridesV1_1">
-      <Description resid="residAppDesc" />
+      <Description resid="AppDescription" />
 
       <Requirements>
         <bt:Sets DefaultMinVersion="1.3">
@@ -59,7 +59,7 @@
             <ExtensionPoint xsi:type="MessageComposeCommandSurface">
               <OfficeTab id="TabDefault">
                 <Group id="mccsG0">
-                  <Label resid="residGL0"/>
+                  <Label resid="AppName"/>
                   <Control xsi:type="Button" id="MRCS_TpBtn0">
                     <Label resid="residStr0"/>
                     <Supertip>
@@ -72,7 +72,7 @@
                       <bt:Image size="80" resid="Icon80x80" />
                     </Icon>
                     <Action xsi:type="ShowTaskpane">
-                      <SourceLocation resid="residUrl0"/>
+                      <SourceLocation resid="Taskpane"/>
                     </Action>
                   </Control>
                 </Group>
@@ -98,16 +98,16 @@
           <bt:Image id="Icon80x80" DefaultValue="https://reach-ms-add-in.test/assets/icon-80.png"/>
         </bt:Images>
         <bt:Urls>
-          <bt:Url id="residUrl0" DefaultValue="https://reach-ms-add-in.test/src/local/taskpane/html/assignsignature.html"></bt:Url>
+          <bt:Url id="Taskpane" DefaultValue="https://reach-ms-add-in.test/src/local/taskpane/html/assignsignature.html"></bt:Url>
           <bt:Url id="Autorun" DefaultValue="https://reach-ms-add-in.test/src/local/commands/html/autorun.html"></bt:Url>
           <bt:Url id="runtimeJs" DefaultValue="https://reach-ms-add-in.test/src/local/commands/js/autorun.js"></bt:Url>
         </bt:Urls>
          <bt:ShortStrings>
-          <bt:String id="residGL0" DefaultValue="Reach App"></bt:String>
+          <bt:String id="AppName" DefaultValue="Reach App"></bt:String>
           <bt:String id="residStr0" DefaultValue="Settings"></bt:String>
         </bt:ShortStrings>
         <bt:LongStrings>
-          <bt:String id="residAppDesc" DefaultValue="Add your email signature when composing emails in Outlook."></bt:String>
+          <bt:String id="AppDescription" DefaultValue="Add your email signature when composing emails in Outlook."></bt:String>
           <bt:String id="residTT0" DefaultValue="Reach App"></bt:String>
         </bt:LongStrings>
       </Resources>
