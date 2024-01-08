@@ -84,7 +84,7 @@ function addTemplateSignature(signatureDetails, eventObj) {
 function display_insight_infobar() {
   Office.context.mailbox.item.notificationMessages.addAsync("fd90eb33431b46f58a68720c36154b4a", {
       type: "insightMessage",
-      message: "Please set your signature with the Office Add-ins sample.",
+      message: "Please set your signature from the Reach Add-in.",
       icon: "Icon.16x16",
       actions: [
           {
