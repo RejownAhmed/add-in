@@ -119,7 +119,7 @@ function get_signature_info(user_info, eventObj) {
 
   fetch(apiUrl, {
       headers: {
-        "Content-Type": "application/json",
+        "Accept": "application/json",
       }
     })
       .then(function (response) {
@@ -127,7 +127,9 @@ function get_signature_info(user_info, eventObj) {
             return response.text();
           }
           
-          throw new Error("Network response was not ok");
+        return response.json().then(r=> {
+          throw new Error(r.message)
+        })
       })
       .then(function (signature) {
           // Assuming the API returns the signature as text
@@ -141,7 +143,7 @@ function get_signature_info(user_info, eventObj) {
           }
       })
       .catch(function (error) {
-          console.error('Fetch error:', error);
+          console.log(error);
           // Handle errors as needed
       });
 
