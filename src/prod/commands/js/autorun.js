@@ -117,28 +117,33 @@ function get_template_name(compose_type) {
 function get_signature_info(user_info, eventObj) {
   let apiUrl = "https://reachapi.reach.app/api/v2/app/reach/get-signature/outlook?email=" + user_info;
 
-      fetch(apiUrl)
-          .then(function (response) {
-              if (!response.ok) {
-                  console.log("Network response was not ok");
-              }
-              return response.text();
-          })
-          .then(function (signature) {
-              // Assuming the API returns the signature as text
-              // You may need to adjust this part based on the actual response format
-            
-              console.log(signature);
-              if (signature !== "") {
-                  addTemplateSignature(signature,eventObj)
+  fetch(apiUrl, {
+      headers: {
+        "Content-Type": "application/json",
+      }
+    })
+      .then(function (response) {
+          if (response.ok) {
+            return response.text();
+          }
+          
+          throw new Error("Network response was not ok");
+      })
+      .then(function (signature) {
+          // Assuming the API returns the signature as text
+          // You may need to adjust this part based on the actual response format
+        
+          console.log(signature);
+          if (signature !== "") {
+              addTemplateSignature(signature,eventObj)
 
-                  // Your logic when the signature is not empty
-              }
-          })
-          .catch(function (error) {
-              console.log('Fetch error:', error);
-              // Handle errors as needed
-          });
+              // Your logic when the signature is not empty
+          }
+      })
+      .catch(function (error) {
+          console.error('Fetch error:', error);
+          // Handle errors as needed
+      });
 
 
   
