@@ -7,7 +7,7 @@
   <Version>1.0.0.2</Version>
   <ProviderName>Reach</ProviderName>
   <DefaultLocale>en-us</DefaultLocale>
-  <DisplayName DefaultValue="Reach Add-in for Outlook"/>
+  <DisplayName DefaultValue="Reach Email Signature"/>
   <Description DefaultValue="This Add In adds your (or organization users') email signature when composing emails in Outlook."/>
   <IconUrl DefaultValue="https://addins.reach.app/outlook/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://addins.reach.app/outlook/assets/icon-128.png"/>
